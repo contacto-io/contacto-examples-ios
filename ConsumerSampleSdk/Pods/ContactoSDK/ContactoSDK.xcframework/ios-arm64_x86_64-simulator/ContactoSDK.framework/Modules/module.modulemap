@@ -1,0 +1,11 @@
+framework module ContactoSDK {
+  umbrella header "ContactoSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ContactoSDK.Swift {
+    header "ContactoSDK-Swift.h"
+    requires objc
+}

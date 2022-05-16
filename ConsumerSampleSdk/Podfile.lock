@@ -1,0 +1,16 @@
+PODS:
+  - ContactoSDK (1.0.0-beta)
+
+DEPENDENCIES:
+  - ContactoSDK (~> 1.0.0-beta)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ContactoSDK
+
+SPEC CHECKSUMS:
+  ContactoSDK: 09b11708cf86d08134598c7f1218d5f3385ef3f9
+
+PODFILE CHECKSUM: 73aa34b257e5c89429f4226bce80556eee969af7
+
+COCOAPODS: 1.11.3
