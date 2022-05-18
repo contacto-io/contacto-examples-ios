@@ -32,6 +32,8 @@ class ConfigurationsViewController: UIViewController {
         view.backgroundColor = UIColor.white
         view.cancelButton.addTarget(self, action: #selector(handleBlurTap), for: .touchUpInside)
         view.doneButton.addTarget(self, action: #selector(handleDone), for: .touchUpInside)
+        view.chatIdTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        view.chatKeyTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         return view
     }()
     
@@ -52,8 +54,7 @@ class ConfigurationsViewController: UIViewController {
         setupUI()
         binder()
         viewModel?.getAllConfigurations()
-        viewModel?.chatId = chatConfigBottomView.chatIdTextField.text
-        viewModel?.chatKey = chatConfigBottomView.chatKeyTextField.text
+        updateChatKeyValues()
     }
     
     override func viewDidLayoutSubviews() {
@@ -75,7 +76,6 @@ class ConfigurationsViewController: UIViewController {
     
     @objc func handleBlurTap() {
         view.endEditing(true)
-        chatConfigBottomView.clearInputs()
         updateConfigVisibility(visibility: .hide)
     }
     
@@ -98,5 +98,14 @@ class ConfigurationsViewController: UIViewController {
               !chatKey.isEmpty else { return }
         updateConfigVisibility(visibility: .hide)
         viewModel.updateChatConfiguration(with: chatId, and: chatKey)
+    }
+    
+    private func updateChatKeyValues() {
+        let chatId = UserDefaults.standard.contactoInitInfo.chatId.isEmpty ? "a4ef65e8-5908-4c65-8b65-52ff7a2bf8eb" : UserDefaults.standard.contactoInitInfo.chatId
+        let chatKey = UserDefaults.standard.contactoInitInfo.chatKey.isEmpty ? "665255e3914bb5060b0ba7102a8bade8d7dcf21e734093818863ac759725b3f6" : UserDefaults.standard.contactoInitInfo.chatKey
+        chatConfigBottomView.chatIdTextField.text = chatId
+        chatConfigBottomView.chatKeyTextField.text = chatKey
+        viewModel?.chatId = chatConfigBottomView.chatIdTextField.text
+        viewModel?.chatKey = chatConfigBottomView.chatKeyTextField.text
     }
 }

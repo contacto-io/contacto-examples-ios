@@ -11,10 +11,16 @@ extension OrdersViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "OrdersCell", for: indexPath) as? OrdersCell,
               let viewModel = viewModel else { return UITableViewCell() }
         cell.updateContent(data: viewModel.dataSource[indexPath.item])
+        cell.chatButton.addTarget(self, action: #selector(handleChat), for: .touchUpInside)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 320
     }
+
+    @objc func handleChat() {
+        viewModel?.loadChat(navigation: navigationController!)
+    }
+
 }

@@ -61,4 +61,16 @@ extension  CustomerServiceViewController: UITableViewDelegate, UITableViewDataSo
             
         }
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let sectionType = CustomerServiceType(rawValue: indexPath.section) else {
+            return
+        }
+        switch sectionType {
+        case .mostSearched:
+            handleChat()
+        default:
+            break
+        }
+    }
 }

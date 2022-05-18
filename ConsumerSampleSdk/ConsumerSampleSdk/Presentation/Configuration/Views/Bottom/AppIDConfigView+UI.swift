@@ -51,9 +51,4 @@ extension AppIDConfigView {
                              leading: chatIdTextField.leadingAnchor,
                              trailing: chatIdTextField.trailingAnchor)
     }
-    
-    func clearInputs() {
-        chatIdTextField.text = ""
-        chatKeyTextField.text = ""
-    }
 }
