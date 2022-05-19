@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		816A37362834AA4900F7D774 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		816A37362834AA4900F7D774 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81A853E728324AD4003F695B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853E628324AD4003F695B /* AppDelegate.swift */; };
 		81A853F028324AD5003F695B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A853EF28324AD5003F695B /* Assets.xcassets */; };
 		81A853FE28324AD5003F695B /* ConsumerSampleSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853FD28324AD5003F695B /* ConsumerSampleSdkTests.swift */; };
@@ -77,6 +77,7 @@
 		81A854CB28326953003F695B /* SettingsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A854CA28326953003F695B /* SettingsViewController+TableView.swift */; };
 		81DC68842834AF25005D3208 /* ContactoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B1E0752832BE6B0083BC66 /* ContactoSDK.xcframework */; };
 		81DC68852834AF25005D3208 /* ContactoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81B1E0752832BE6B0083BC66 /* ContactoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81DC688728368083005D3208 /* ConfigurationsViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC688628368083005D3208 /* ConfigurationsViewController+TextField.swift */; };
 		F888FABE5F572E1199307DEA /* Pods_ConsumerSampleSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EF8C28411F5A39ED6C9F2F /* Pods_ConsumerSampleSdk.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +105,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				816A37362834AA4900F7D774 /* BuildFile in Embed Frameworks */,
+				816A37362834AA4900F7D774 /* (null) in Embed Frameworks */,
 				81DC68852834AF25005D3208 /* ContactoSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -185,6 +186,7 @@
 		81A854C828326943003F695B /* SettingsViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+UI.swift"; sourceTree = "<group>"; };
 		81A854CA28326953003F695B /* SettingsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableView.swift"; sourceTree = "<group>"; };
 		81B1E0752832BE6B0083BC66 /* ContactoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ContactoSDK.xcframework; path = Pods/ContactoSDK/ContactoSDK.xcframework; sourceTree = "<group>"; };
+		81DC688628368083005D3208 /* ConfigurationsViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigurationsViewController+TextField.swift"; sourceTree = "<group>"; };
 		A010FBFA92778EF2C0D4F265 /* Pods-ConsumerSampleSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerSampleSdk.release.xcconfig"; path = "Target Support Files/Pods-ConsumerSampleSdk/Pods-ConsumerSampleSdk.release.xcconfig"; sourceTree = "<group>"; };
 		A1EF8C28411F5A39ED6C9F2F /* Pods_ConsumerSampleSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsumerSampleSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACD4D0FE8AE002CE9C89AE5 /* Pods-ConsumerSampleSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerSampleSdk.debug.xcconfig"; path = "Target Support Files/Pods-ConsumerSampleSdk/Pods-ConsumerSampleSdk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -726,6 +728,7 @@
 				81A854AF2832670E003F695B /* ConfigurationsViewController+TableView.swift */,
 				81A854B128326722003F695B /* ConfigurationsViewController+ChatConfig.swift */,
 				81A854B328326733003F695B /* ConfigurationViewController+Keyboard.swift */,
+				81DC688628368083005D3208 /* ConfigurationsViewController+TextField.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -963,6 +966,7 @@
 				81A8544428325A6C003F695B /* MainTabBarHelper+Enum.swift in Sources */,
 				81A854A928326578003F695B /* ConfigurationViewModel.swift in Sources */,
 				81A8546B28325CAF003F695B /* OrdersCell.swift in Sources */,
+				81DC688728368083005D3208 /* ConfigurationsViewController+TextField.swift in Sources */,
 				81A8546128325C53003F695B /* OrderInfo.swift in Sources */,
 				81A8544728325A91003F695B /* MainTabBarController.swift in Sources */,
 				81A8546428325C6C003F695B /* OrdersViewModel.swift in Sources */,

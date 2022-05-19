@@ -34,6 +34,8 @@ class ConfigurationsViewController: UIViewController {
         view.doneButton.addTarget(self, action: #selector(handleDone), for: .touchUpInside)
         view.chatIdTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         view.chatKeyTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        view.chatIdTextField.delegate = self
+        view.chatKeyTextField.delegate = self
         return view
     }()
     
@@ -90,7 +92,7 @@ class ConfigurationsViewController: UIViewController {
         }
     }
     
-    @objc private func handleDone() {
+    @objc func handleDone() {
         guard let viewModel = viewModel,
               let chatId = viewModel.chatId,
               !chatId.isEmpty,
@@ -108,4 +110,9 @@ class ConfigurationsViewController: UIViewController {
         viewModel?.chatId = chatConfigBottomView.chatIdTextField.text
         viewModel?.chatKey = chatConfigBottomView.chatKeyTextField.text
     }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
 }

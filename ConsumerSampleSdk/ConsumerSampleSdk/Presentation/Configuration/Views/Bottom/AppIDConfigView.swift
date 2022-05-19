@@ -32,6 +32,7 @@ class AppIDConfigView: UIView {
         textField.textColor = .black
         textField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         textField.tag = ChatConfigType.chatId.rawValue
+        textField.returnKeyType = .next
         return textField
     }()
     
@@ -53,6 +54,7 @@ class AppIDConfigView: UIView {
         textField.placeholder = "Enter the Chat App Key"
         textField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         textField.tag = ChatConfigType.chatKey.rawValue
+        textField.returnKeyType = .done
         return textField
     }()
     

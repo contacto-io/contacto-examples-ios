@@ -6,6 +6,7 @@ extension ConfigurationsViewController {
                                                name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
                                                name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }
 
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -25,6 +26,11 @@ extension ConfigurationsViewController {
             strongSelf.view.transform = .identity
         }
     }
+
+    @objc private func appMovedToBackground() {
+        view.endEditing(true)
+    }
+
     func removeKeyboardOberservers() {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)

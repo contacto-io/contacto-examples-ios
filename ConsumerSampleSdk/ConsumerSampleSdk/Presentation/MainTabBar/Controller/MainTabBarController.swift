@@ -4,9 +4,6 @@ class MainTabBarController: UITabBarController {
     var viewModel: MainTabBarVMPresentable?
     var selectedTab: Int = 0
 
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        setupTabBarUI()
-    }
     func initateTabBar() {
         guard let viewModel = viewModel else { return }
         viewModel.generateAppModeDataSource()
