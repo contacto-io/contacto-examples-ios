@@ -43,7 +43,6 @@ class ConfigurationsViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         view.isHidden = true
-        view.layer.zPosition = 1
         view.isUserInteractionEnabled = true
         return view
     }()
@@ -103,8 +102,8 @@ class ConfigurationsViewController: UIViewController {
     }
     
     private func updateChatKeyValues() {
-        let chatId = UserDefaults.standard.contactoInitInfo.chatId.isEmpty ? "a4ef65e8-5908-4c65-8b65-52ff7a2bf8eb" : UserDefaults.standard.contactoInitInfo.chatId
-        let chatKey = UserDefaults.standard.contactoInitInfo.chatKey.isEmpty ? "665255e3914bb5060b0ba7102a8bade8d7dcf21e734093818863ac759725b3f6" : UserDefaults.standard.contactoInitInfo.chatKey
+        let chatId = UserDefaults.standard.contactoInitInfo.appId.isEmpty ? "a4ef65e8-5908-4c65-8b65-52ff7a2bf8eb" : UserDefaults.standard.contactoInitInfo.appId
+        let chatKey = UserDefaults.standard.contactoInitInfo.appKey.isEmpty ? "665255e3914bb5060b0ba7102a8bade8d7dcf21e734093818863ac759725b3f6" : UserDefaults.standard.contactoInitInfo.appKey
         chatConfigBottomView.chatIdTextField.text = chatId
         chatConfigBottomView.chatKeyTextField.text = chatKey
         viewModel?.chatId = chatConfigBottomView.chatIdTextField.text

@@ -10,7 +10,6 @@ extension ConfigurationsViewController: UITextFieldDelegate {
             chatConfigBottomView.chatKeyTextField.becomeFirstResponder()
         case .chatKey:
             chatConfigBottomView.chatKeyTextField.resignFirstResponder()
-            handleDone()
         }
         return true
     }

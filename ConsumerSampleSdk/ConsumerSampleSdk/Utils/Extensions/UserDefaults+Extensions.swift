@@ -16,11 +16,11 @@ extension UserDefaults {
     private func getInfo(with key: String) -> ChatInfo {
         do {
             guard let data = UserDefaults.standard.data(forKey: key) else {
-                return .init(chatId: "", chatKey: "", mobileNumber: "", email: "")
+                return .init(appId: "", appKey: "", mobileNumber: "", email: "")
             }
             return try JSONDecoder().decode(ChatInfo.self, from: data)
         } catch {
-            return .init(chatId: "", chatKey: "", mobileNumber: "", email: "")
+            return .init(appId: "", appKey: "", mobileNumber: "", email: "")
         }
     }
     

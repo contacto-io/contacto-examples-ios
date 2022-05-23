@@ -10,9 +10,6 @@ extension ConfigurationsViewController {
             self.view.layoutIfNeeded()
         } completion: { _ in
             self.blurView.isHidden = visibility == .hide
-            if visibility == .show {
-                self.view.bringSubviewToFront(self.blurView)
-            }
         }
     }
 }

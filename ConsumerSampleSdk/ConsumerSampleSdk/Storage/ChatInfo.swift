@@ -1,8 +1,8 @@
 import Foundation
 
 public struct ChatInfo: Codable {
-    let chatId: String
-    let chatKey: String
+    let appId: String
+    let appKey: String
     let mobileNumber: String
     let email: String
 }

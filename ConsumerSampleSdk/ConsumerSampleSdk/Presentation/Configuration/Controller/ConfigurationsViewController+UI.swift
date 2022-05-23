@@ -1,5 +1,4 @@
 import UIKit
-
 extension ConfigurationsViewController {
     func setupUI() {
         view.backgroundColor = UIColor(hexString: "#FBFAFD")
@@ -11,11 +10,11 @@ extension ConfigurationsViewController {
     }
     
     private func setupLayout() {
-        view.addSubview(blurView)
         view.addSubview(backButton)
         view.addSubview(titleLabel)
         view.addSubview(configurationsTableView)
-        blurView.addSubview(chatConfigBottomView)
+        view.addSubview(blurView)
+        view.addSubview(chatConfigBottomView)
     }
     
     private func setupConstraints() {

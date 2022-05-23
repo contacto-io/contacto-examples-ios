@@ -11,7 +11,7 @@ class CustomerServiceRepository: ICustomerServiceRepository {
     
     func loadChatWiget(with info: ChatInfo,
                        navigationController: UINavigationController) {
-        let appInfo = ContactoSessionInfo(chatId: info.chatId, chatKey: info.chatKey)
+        let appInfo = ContactoSessionInfo(appId: info.appId, appKey: info.appKey)
         let userInfo = ContactoUserInfo(mobileNumber: info.mobileNumber, email: info.email)
         let contactoInitInfo = ContactoInitInfo(appInfo: appInfo,
                                                 userInfo: userInfo)

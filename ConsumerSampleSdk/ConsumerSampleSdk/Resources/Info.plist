@@ -29,6 +29,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Contacto requires access to your phone’s camera.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Contacto requires access to your phone’s microphone.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
