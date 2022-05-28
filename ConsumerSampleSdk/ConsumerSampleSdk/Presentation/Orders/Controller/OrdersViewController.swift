@@ -33,8 +33,4 @@ class OrdersViewController: UIViewController {
             self.ordersTableView.reloadData()
         }
     }
-    
-    @objc private func handleBack() {
-       navigationController?.popViewController(animated: true)
-   }
 }

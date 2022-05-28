@@ -12,4 +12,9 @@ extension ConfigurationsViewController {
             self.blurView.isHidden = visibility == .hide
         }
     }
+    
+    func updateErrorVisibility(error: String? = nil, visiility: Visibility) {
+        chatConfigBottomView.errorLabel.text = error
+        chatConfigBottomView.errorLabel.isHidden = visiility == .hide
+    }
 }

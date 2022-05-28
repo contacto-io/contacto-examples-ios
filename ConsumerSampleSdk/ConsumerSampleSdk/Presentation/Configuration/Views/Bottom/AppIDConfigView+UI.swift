@@ -14,6 +14,7 @@ extension AppIDConfigView {
         addSubview(chatIdLabel)
         addSubview(chatKeyTextField)
         addSubview(chatKeyLabel)
+        addSubview(errorLabel)
     }
     
     private func setupConstraints() {
@@ -50,5 +51,9 @@ extension AppIDConfigView {
                              topConstants: 10,
                              leading: chatIdTextField.leadingAnchor,
                              trailing: chatIdTextField.trailingAnchor)
+        errorLabel.anchors(top: chatKeyLabel.bottomAnchor,
+                           topConstants: 20,
+                           leading: chatKeyLabel.leadingAnchor,
+                           trailing: chatKeyLabel.trailingAnchor)
     }
 }

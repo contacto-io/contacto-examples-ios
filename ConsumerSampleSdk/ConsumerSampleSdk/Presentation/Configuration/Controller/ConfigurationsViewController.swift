@@ -48,14 +48,15 @@ class ConfigurationsViewController: UIViewController {
     }()
     
     var configViewBottomConstraint: NSLayoutConstraint?
-    let bottomConfigHeight: CGFloat = 300
-
+    var bottomConfigHeight: CGFloat {
+        return view.safeAreaInsets.bottom + 310
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         binder()
         viewModel?.getAllConfigurations()
-        updateChatKeyValues()
     }
     
     override func viewDidLayoutSubviews() {
@@ -96,22 +97,16 @@ class ConfigurationsViewController: UIViewController {
               let chatId = viewModel.chatId,
               !chatId.isEmpty,
               let chatKey = viewModel.chatKey,
-              !chatKey.isEmpty else { return }
+              !chatKey.isEmpty else {
+            updateErrorVisibility(error: "App id/key can't be empty.", visiility: .show)
+            return }
+        updateErrorVisibility(visiility: .hide)
+        view.endEditing(true)
         updateConfigVisibility(visibility: .hide)
         viewModel.updateChatConfiguration(with: chatId, and: chatKey)
     }
     
-    private func updateChatKeyValues() {
-        let chatId = UserDefaults.standard.contactoInitInfo.appId.isEmpty ? "a4ef65e8-5908-4c65-8b65-52ff7a2bf8eb" : UserDefaults.standard.contactoInitInfo.appId
-        let chatKey = UserDefaults.standard.contactoInitInfo.appKey.isEmpty ? "665255e3914bb5060b0ba7102a8bade8d7dcf21e734093818863ac759725b3f6" : UserDefaults.standard.contactoInitInfo.appKey
-        chatConfigBottomView.chatIdTextField.text = chatId
-        chatConfigBottomView.chatKeyTextField.text = chatKey
-        viewModel?.chatId = chatConfigBottomView.chatIdTextField.text
-        viewModel?.chatKey = chatConfigBottomView.chatKeyTextField.text
-    }
-
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-
 }

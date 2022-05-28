@@ -32,7 +32,7 @@ class AppIDConfigView: UIView {
         textField.textColor = .black
         textField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         textField.tag = ChatConfigType.chatId.rawValue
-        textField.returnKeyType = .next
+        textField.returnKeyType = .done
         return textField
     }()
     
@@ -67,6 +67,17 @@ class AppIDConfigView: UIView {
         label.textAlignment = .left
         return label
     }()
+    
+    lazy var errorLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .red
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.numberOfLines = 0
+        label.textAlignment = .left
+        label.isHidden = true
+        return label
+    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)

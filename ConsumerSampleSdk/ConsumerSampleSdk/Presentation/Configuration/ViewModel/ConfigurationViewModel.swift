@@ -9,8 +9,7 @@ class ConfigurationViewModel: ConfigurationVMPresentable {
 
     func getAllConfigurations() {
         let configurations = [
-            ConfigurationInfo(title: "App ID", actionType: .detail),
-            ConfigurationInfo(title: "Notifications", actionType: .switch)
+            ConfigurationInfo(title: "App ID", actionType: .detail)
         ]
         datasource = configurations
         reloadTable?()
