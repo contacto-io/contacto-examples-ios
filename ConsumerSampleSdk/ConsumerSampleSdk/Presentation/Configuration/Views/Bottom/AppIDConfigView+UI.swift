@@ -4,6 +4,7 @@ extension AppIDConfigView {
     func setupUI() {
         setupLayout()
         setupConstraints()
+        updateDoneButtonEnable(isEnabled: false)
     }
     
     private func setupLayout() {
@@ -55,5 +56,10 @@ extension AppIDConfigView {
                            topConstants: 20,
                            leading: chatKeyLabel.leadingAnchor,
                            trailing: chatKeyLabel.trailingAnchor)
+    }
+
+    func updateDoneButtonEnable(isEnabled: Bool) {
+        doneButton.isEnabled = isEnabled
+        doneButton.alpha = isEnabled ? 1.0 : 0.2
     }
 }

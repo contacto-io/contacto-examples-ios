@@ -34,8 +34,8 @@ extension ConfigurationsViewController {
                                   trailing: view.trailingAnchor)
         chatConfigBottomView.anchors(leading: view.leadingAnchor,
                                      trailing: view.trailingAnchor,
-                                     heightConstants: bottomConfigHeight)
-        configViewBottomConstraint = chatConfigBottomView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: bottomConfigHeight)
+                                     heightConstants: configViewHeight)
+        configViewBottomConstraint = chatConfigBottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: configBottomConstants)
         configViewBottomConstraint?.isActive = true
         
         blurView.anchors(top: view.topAnchor,

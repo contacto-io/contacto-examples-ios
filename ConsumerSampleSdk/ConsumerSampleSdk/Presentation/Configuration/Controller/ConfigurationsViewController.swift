@@ -48,15 +48,16 @@ class ConfigurationsViewController: UIViewController {
     }()
     
     var configViewBottomConstraint: NSLayoutConstraint?
-    var bottomConfigHeight: CGFloat {
-        return view.safeAreaInsets.bottom + 310
+    let configViewHeight: CGFloat = 310
+    var configBottomConstants: CGFloat {
+        return view.safeAreaInsets.bottom + configViewHeight
     }
- 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         binder()
         viewModel?.getAllConfigurations()
+        updateChatIdsAndKeysFromConfig()
     }
     
     override func viewDidLayoutSubviews() {
@@ -84,11 +85,21 @@ class ConfigurationsViewController: UIViewController {
     @objc private func textFieldDidChange(_ textField: UITextField) {
         guard let configType = ChatConfigType(rawValue: textField.tag),
               var viewModel = viewModel else { return }
+
         switch configType {
         case .chatId:
             viewModel.chatId = textField.text
         case .chatKey:
             viewModel.chatKey = textField.text
+        }
+        if let chatId = viewModel.chatId,
+           let chatKey = viewModel.chatKey,
+           !chatId.isEmpty,
+           !chatKey.isEmpty {
+            chatConfigBottomView.updateDoneButtonEnable(isEnabled: true)
+        }
+        else {
+            chatConfigBottomView.updateDoneButtonEnable(isEnabled: false)
         }
     }
     
