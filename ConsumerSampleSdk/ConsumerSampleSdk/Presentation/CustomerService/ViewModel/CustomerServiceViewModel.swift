@@ -48,7 +48,7 @@ class CustomerServiceViewModel: ServiceVMPresentable {
     }
     
     func loadChat(navigation: UINavigationController) {
-        useCase.loadChatWiget(with: UserDefaults.standard.contactoInitInfo, navigationController: navigation,
+        useCase.loadChatWiget(navigationController: navigation,
                               delegate: self)
     }
 }

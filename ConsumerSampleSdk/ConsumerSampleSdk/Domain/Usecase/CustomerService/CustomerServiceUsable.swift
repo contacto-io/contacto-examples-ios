@@ -1,7 +1,6 @@
 import UIKit
 
 protocol CustomerServiceUsable {
-    func loadChatWiget(with info: ChatInfo,
-                       navigationController: UINavigationController,
+    func loadChatWiget(navigationController: UINavigationController,
                        delegate: CustomerServiceDelegate)
 }

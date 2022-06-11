@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		uVQwBjl+zDKTgDglsPywQ/0UDCU=
+		8ybhX0oCQWtPeyiLgLkeTAiAx5w=
 		</data>
 		<key>ContactoSDK+Prod.xcconfig</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ContactoSDK-Swift.h</key>
 		<data>
-		ohJiiCOiaSjPy+ohj4Rkz+pskGM=
+		YlmWxIKJMNAkjBLyrfF90R4HAhA=
 		</data>
 		<key>Headers/ContactoSDK.h</key>
 		<data>
@@ -22,31 +22,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f8b8yKsnAbjvz/7N2lMYjR2+79Q=
+		/FOD250loPk5SDgs1070tc/MgWo=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MUITLAcscNNFp/qUhpB9ZHT5f8o=
+		kW0U8IUfPLAbo7ZDMnwJw6iVBEs=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tFEfXIoupvMMAjx9npfyHxM+hHc=
+		48Va9nfxpX2VbBr2M9gzJtPJlIU=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Qjj5hP41T2WJBWqTeVqWsb9A48g=
+		skYd8PdU1ULCGodbm8KekrlK4Ik=
+		</data>
+		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		kW0U8IUfPLAbo7ZDMnwJw6iVBEs=
+		</data>
+		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		48Va9nfxpX2VbBr2M9gzJtPJlIU=
+		</data>
+		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		skYd8PdU1ULCGodbm8KekrlK4Ik=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FTXQdYpUcoODGeB8CK3hg1tP/4A=
+		Iy3vzq3mWw5kygS+38qePjwmQeQ=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dX1jpbGC4MZ4qe2P+X7qQmbOkUI=
+		CRTKlcvdCmlraYQkARxW1/2SOVg=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KlWKemWwQPKIkWENReSJ+0HOsHs=
+		vnR7atD0rOU+UQn8NW154r1t488=
+		</data>
+		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftdoc</key>
+		<data>
+		Iy3vzq3mWw5kygS+38qePjwmQeQ=
+		</data>
+		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftinterface</key>
+		<data>
+		CRTKlcvdCmlraYQkARxW1/2SOVg=
+		</data>
+		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftmodule</key>
+		<data>
+		vnR7atD0rOU+UQn8NW154r1t488=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T7L+yfVXHMeijUm0gfVMKMDCJqdFHqYnq+zFogZgSKQ=
+			xNnhPjPVPuA9ep+kEsSJ6N3QYxW9kAQjjSMUm8V8iWI=
 			</data>
 		</dict>
 		<key>ContactoSDK+Prod.xcconfig</key>
@@ -73,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LErK6zozQIeiuuL/yTVwGxVk3M1xCaumhamHCBs/bp4=
+			RHVaHm11V9URDbXbqcanObWekIIhQJ2c4xfwgdTG0lY=
 			</data>
 		</dict>
 		<key>Headers/ContactoSDK.h</key>
@@ -87,42 +111,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UXGiC5AqTY2AnuZdXcrylesHZDIkHEEPpVwyh6de9p8=
+			qjPJ6xm2zpWSDiEkNoYNAPvklz1at8RlDEReGgjPoBs=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hbsoPT5bgJQaPzqQNNBNKJI8ZcqZeRWNJ0oAxQ//a2s=
+			sH3AndnKxHxVlxfzhYS4OLt3J1obD/NYkprU/iz3khE=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZDBs19WQ3XXxa3++9Yf+aE3+RmyjxalUdYCOuGix+Fw=
+			gaILSyRhiOEJVsp+sHfe2K55pLPzYLKKDw7a4EOAwcw=
+			</data>
+		</dict>
+		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qjPJ6xm2zpWSDiEkNoYNAPvklz1at8RlDEReGgjPoBs=
+			</data>
+		</dict>
+		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sH3AndnKxHxVlxfzhYS4OLt3J1obD/NYkprU/iz3khE=
+			</data>
+		</dict>
+		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gaILSyRhiOEJVsp+sHfe2K55pLPzYLKKDw7a4EOAwcw=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t+JPbcLVUbLTJiYmh7j689aEDsbvhrk6sL8HZ7kWCcA=
+			eVYs+tEZNWEA7/1gp7w4hBeKp9vo9Rma021DY6ocG+s=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L9AkSFOfScSgvpQGhyXGRNidgS8Jzo0NMzkA14nnvT0=
+			x032oy1ZPEnEt/dYH/wAYo50oEXKH7V34ioLlXTX38M=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NgfatWox3o/tDCOGE2XBiwIwd7DaGWK/PEfHAm0GZfU=
+			qMOsHoi+RoPZkfZ18AT+7QM3UZ5G69PG2IMf4uxya1U=
+			</data>
+		</dict>
+		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eVYs+tEZNWEA7/1gp7w4hBeKp9vo9Rma021DY6ocG+s=
+			</data>
+		</dict>
+		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x032oy1ZPEnEt/dYH/wAYo50oEXKH7V34ioLlXTX38M=
+			</data>
+		</dict>
+		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qMOsHoi+RoPZkfZ18AT+7QM3UZ5G69PG2IMf4uxya1U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

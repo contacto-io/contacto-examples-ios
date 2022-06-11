@@ -52,6 +52,7 @@ class ConfigurationsViewController: UIViewController {
     var configBottomConstants: CGFloat {
         return view.safeAreaInsets.bottom + configViewHeight
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -80,12 +81,13 @@ class ConfigurationsViewController: UIViewController {
     @objc func handleBlurTap() {
         view.endEditing(true)
         updateConfigVisibility(visibility: .hide)
+        updateChatIdsAndKeysFromConfig()
     }
     
     @objc private func textFieldDidChange(_ textField: UITextField) {
         guard let configType = ChatConfigType(rawValue: textField.tag),
               var viewModel = viewModel else { return }
-
+        
         switch configType {
         case .chatId:
             viewModel.chatId = textField.text
@@ -109,7 +111,7 @@ class ConfigurationsViewController: UIViewController {
               !chatId.isEmpty,
               let chatKey = viewModel.chatKey,
               !chatKey.isEmpty else {
-            updateErrorVisibility(error: "App id/key can't be empty.", visiility: .show)
+            updateErrorVisibility(error: "Please check your inputs", visiility: .show)
             return }
         updateErrorVisibility(visiility: .hide)
         view.endEditing(true)

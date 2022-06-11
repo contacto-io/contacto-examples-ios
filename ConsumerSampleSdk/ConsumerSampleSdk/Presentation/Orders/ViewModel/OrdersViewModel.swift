@@ -4,7 +4,6 @@ class OrdersViewModel: OrdersVMPresentable {
     var dataSource: [OrderInfo] = []
     
     var reloadTable: (() -> Void)?
-    
     let useCase: CustomerServiceUsable
     init(useCase: CustomerServiceUsable = CustomerServiceUsecase()) {
         self.useCase = useCase
@@ -45,12 +44,12 @@ class OrdersViewModel: OrdersVMPresentable {
     }
 
     func loadChat(navigation: UINavigationController) {
-        useCase.loadChatWiget(with: UserDefaults.standard.contactoInitInfo, navigationController: navigation,
+        useCase.loadChatWiget(navigationController: navigation,
                               delegate: self)
     }
 
 }
 
 extension OrdersViewModel: CustomerServiceDelegate {
-    func customerService(didFailToLoadChat withError: CustomerServiceChatError) {}
+    func customerService(didFailToLoadChat withError: CustomerServiceChatError) { }
 }

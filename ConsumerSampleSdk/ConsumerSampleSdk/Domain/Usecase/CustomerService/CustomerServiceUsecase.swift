@@ -5,11 +5,10 @@ class CustomerServiceUsecase: CustomerServiceUsable {
     init(repository: ICustomerServiceRepository = CustomerServiceRepository()) {
         self.repository = repository
     }
-    func loadChatWiget(with info: ChatInfo, navigationController: UINavigationController,
+    func loadChatWiget(navigationController: UINavigationController,
                        delegate: CustomerServiceDelegate) {
         repository.delegate = delegate
-        repository.loadChatWiget(with: info,
-                                 navigationController: navigationController)
+        repository.loadChatWiget(navigationController: navigationController)
     }
-
+ 
 }
