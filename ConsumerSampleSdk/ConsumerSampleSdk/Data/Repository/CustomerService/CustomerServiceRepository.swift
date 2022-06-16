@@ -30,6 +30,8 @@ extension CustomerServiceRepository: ContactoDelegate {
             return .loadingError(message)
         case .initialisationError:
             return .initialisationError
+        case .exceptionError(let message):
+            return .exceptionError(message)
         }
     }
 }

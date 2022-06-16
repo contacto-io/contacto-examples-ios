@@ -6,4 +6,5 @@ enum CustomerServiceChatError {
     case noInternet
     case loadingError(String)
     case initialisationError
+    case exceptionError(String)
 }
