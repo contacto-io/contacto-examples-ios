@@ -10,7 +10,7 @@
 		</data>
 		<key>ContactoSDK+Prod.xcconfig</key>
 		<data>
-		W8ilbsvOMopRyZmuPkQaBnUOJc8=
+		KZxUStdtYyoA1O69IojFuyRa4IE=
 		</data>
 		<key>Headers/ContactoSDK-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7V+go1nqiMiyqMJL00QtaBh2Q7E=
+		x3lBXB1tj/0AjxmuEgpeqhG/z9c=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7V+go1nqiMiyqMJL00QtaBh2Q7E=
+		x3lBXB1tj/0AjxmuEgpeqhG/z9c=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NJaB9DZbPLu4N+FgQKvmdPHsacA=
+		rgDJHSZOUwGrz5lqQoqcmgnb2xw=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		NJaB9DZbPLu4N+FgQKvmdPHsacA=
+		rgDJHSZOUwGrz5lqQoqcmgnb2xw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pghmN9dB80rbCY5Msr4pnc9erkPlpdeAf/2VxiCJxd4=
+			Vfr3PSvDxAkOXmI71qm3imIQEzWEfpJEu1evydUmHG4=
 			</data>
 		</dict>
 		<key>Headers/ContactoSDK-Swift.h</key>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/GnUaFGwYUzgOHsI9qhOvgEMZD8Rn3XbioHK9DacO0c=
+			lsqX4Zf2fFsrqYE/8F5XY6SwpKVbHOu5B3bekvxMpD8=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -146,7 +146,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/GnUaFGwYUzgOHsI9qhOvgEMZD8Rn3XbioHK9DacO0c=
+			lsqX4Zf2fFsrqYE/8F5XY6SwpKVbHOu5B3bekvxMpD8=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bA7xjUcQWNAs4aNqdgs4xdIAyVasIJEJZJrKX0a2gJA=
+			L/9ZXf4fbqBsEZXlQlcw1aibWGNZuK/GwoCsi0uSYLE=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bA7xjUcQWNAs4aNqdgs4xdIAyVasIJEJZJrKX0a2gJA=
+			L/9ZXf4fbqBsEZXlQlcw1aibWGNZuK/GwoCsi0uSYLE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -5,5 +5,5 @@
 
 target 'ConsumerSampleSdk' do
    use_frameworks!
-   pod 'ContactoSDK', '~> 1.0.4-beta'
+   pod 'ContactoSDK', '~> 1.0.6-beta'
 end
