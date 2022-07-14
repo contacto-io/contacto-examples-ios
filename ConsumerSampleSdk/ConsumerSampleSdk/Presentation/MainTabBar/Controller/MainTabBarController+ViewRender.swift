@@ -3,13 +3,13 @@ import UIKit
 extension MainTabBarController {
     func loadHome(navigation: UINavigationController) {
         let controller = UIViewController()
-        controller.view.backgroundColor = .green
+        controller.view.backgroundColor = .white
         navigation.setViewControllers([controller], animated: true)
     }
     
     func loadOrganizer(navigation: UINavigationController) {
         let controller = UIViewController()
-        controller.view.backgroundColor = .yellow
+        controller.view.backgroundColor = .white
         navigation.setViewControllers([controller], animated: true)
     }
     

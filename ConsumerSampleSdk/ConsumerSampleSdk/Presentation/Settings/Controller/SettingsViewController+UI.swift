@@ -12,6 +12,7 @@ extension  SettingsViewController {
         view.addSubview(titleLabel)
         view.addSubview(nameLabel)
         view.addSubview(emailLabel)
+        view.addSubview(numberLabel)
         view.addSubview(settingsTableView)
     }
     
@@ -28,7 +29,11 @@ extension  SettingsViewController {
                            topConstants: 2,
                            widthConstants: 200,
                            centerX: view.centerXAnchor)
-        settingsTableView.anchors(top: emailLabel.bottomAnchor,
+        numberLabel.anchors(top: emailLabel.bottomAnchor,
+                           topConstants: 2,
+                           widthConstants: 200,
+                           centerX: view.centerXAnchor)
+        settingsTableView.anchors(top: numberLabel.bottomAnchor,
                                   topConstants: 30,
                                   leading: view.leadingAnchor,
                                   bottom: view.safeAreaLayoutGuide.bottomAnchor,

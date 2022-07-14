@@ -38,6 +38,15 @@ class SettingsViewController: UIViewController {
         return tableView
     }()
 
+    lazy var numberLabel: UILabel = {
+           let label = UILabel()
+           label.text = "919986486551"
+           label.textColor = .lightGray
+           label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+           label.textAlignment = .center
+           return label
+       }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
