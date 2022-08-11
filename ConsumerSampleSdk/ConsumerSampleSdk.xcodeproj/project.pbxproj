@@ -75,6 +75,11 @@
 		81A854C928326943003F695B /* SettingsViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A854C828326943003F695B /* SettingsViewController+UI.swift */; };
 		81A854CB28326953003F695B /* SettingsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A854CA28326953003F695B /* SettingsViewController+TableView.swift */; };
 		81DC688728368083005D3208 /* ConfigurationsViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC688628368083005D3208 /* ConfigurationsViewController+TextField.swift */; };
+		81E4BF9128A55FEF009985D8 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4BF9028A55FEF009985D8 /* EditProfileView.swift */; };
+		81E4BF9328A5600E009985D8 /* EditProfileView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4BF9228A5600E009985D8 /* EditProfileView+UI.swift */; };
+		81E4BF9528A560A4009985D8 /* SettingsViewController+EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4BF9428A560A4009985D8 /* SettingsViewController+EditProfile.swift */; };
+		81E4BF9728A560BB009985D8 /* SettingsViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4BF9628A560BB009985D8 /* SettingsViewController+Keyboard.swift */; };
+		81E4BF9928A560D3009985D8 /* SettingsViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4BF9828A560D3009985D8 /* SettingsViewController+TextField.swift */; };
 		9BE3BD58D7A1B7690EDD8B0F /* Pods_ConsumerSampleSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E03EBB790ED60C170507F0 /* Pods_ConsumerSampleSdk.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +175,11 @@
 		81A854CA28326953003F695B /* SettingsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableView.swift"; sourceTree = "<group>"; };
 		81B1E0752832BE6B0083BC66 /* ContactoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ContactoSDK.xcframework; path = Pods/ContactoSDK/ContactoSDK.xcframework; sourceTree = "<group>"; };
 		81DC688628368083005D3208 /* ConfigurationsViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigurationsViewController+TextField.swift"; sourceTree = "<group>"; };
+		81E4BF9028A55FEF009985D8 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		81E4BF9228A5600E009985D8 /* EditProfileView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileView+UI.swift"; sourceTree = "<group>"; };
+		81E4BF9428A560A4009985D8 /* SettingsViewController+EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+EditProfile.swift"; sourceTree = "<group>"; };
+		81E4BF9628A560BB009985D8 /* SettingsViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		81E4BF9828A560D3009985D8 /* SettingsViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TextField.swift"; sourceTree = "<group>"; };
 		C3E03EBB790ED60C170507F0 /* Pods_ConsumerSampleSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsumerSampleSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BE4B130E89714138412FA7 /* Pods-ConsumerSampleSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerSampleSdk.release.xcconfig"; path = "Target Support Files/Pods-ConsumerSampleSdk/Pods-ConsumerSampleSdk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -737,6 +747,7 @@
 		81A854B9283268A1003F695B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81E4BF8F28A55FD7009985D8 /* EditProfile */,
 				81A854BA283268AB003F695B /* Cells */,
 			);
 			path = View;
@@ -773,8 +784,20 @@
 				81A854C628326930003F695B /* SettingsViewController.swift */,
 				81A854C828326943003F695B /* SettingsViewController+UI.swift */,
 				81A854CA28326953003F695B /* SettingsViewController+TableView.swift */,
+				81E4BF9428A560A4009985D8 /* SettingsViewController+EditProfile.swift */,
+				81E4BF9628A560BB009985D8 /* SettingsViewController+Keyboard.swift */,
+				81E4BF9828A560D3009985D8 /* SettingsViewController+TextField.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		81E4BF8F28A55FD7009985D8 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				81E4BF9028A55FEF009985D8 /* EditProfileView.swift */,
+				81E4BF9228A5600E009985D8 /* EditProfileView+UI.swift */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 		9AA43ED76263E09B3C5C7361 /* Frameworks */ = {
@@ -960,12 +983,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				81A8547F283261CC003F695B /* ServiceHelper+Enum.swift in Sources */,
+				81E4BF9528A560A4009985D8 /* SettingsViewController+EditProfile.swift in Sources */,
 				81A85433283258F7003F695B /* CustomerServiceUsecase.swift in Sources */,
 				81A8544428325A6C003F695B /* MainTabBarHelper+Enum.swift in Sources */,
 				81A854A928326578003F695B /* ConfigurationViewModel.swift in Sources */,
 				81A8546B28325CAF003F695B /* OrdersCell.swift in Sources */,
 				81DC688728368083005D3208 /* ConfigurationsViewController+TextField.swift in Sources */,
 				81A8546128325C53003F695B /* OrderInfo.swift in Sources */,
+				81E4BF9728A560BB009985D8 /* SettingsViewController+Keyboard.swift in Sources */,
 				81A8544728325A91003F695B /* MainTabBarController.swift in Sources */,
 				81A8546428325C6C003F695B /* OrdersViewModel.swift in Sources */,
 				81A8545428325BAE003F695B /* CoordinatorHelper+Enums.swift in Sources */,
@@ -977,6 +1002,7 @@
 				81A854BF283268EC003F695B /* SettingsHelper+Protocol.swift in Sources */,
 				81A8546728325C89003F695B /* OrdersHelper+Protocols.swift in Sources */,
 				81A8544928325AAB003F695B /* MainTabBarController+ViewRender.swift in Sources */,
+				81E4BF9328A5600E009985D8 /* EditProfileView+UI.swift in Sources */,
 				81A8547628325D58003F695B /* OrdersViewController+TableView.swift in Sources */,
 				81A8547A283261A5003F695B /* ActiveConversationsInfo.swift in Sources */,
 				81A854242832514F003F695B /* UIColor+Extensions.swift in Sources */,
@@ -1009,12 +1035,14 @@
 				81A854A128326528003F695B /* ConfigurationCell.swift in Sources */,
 				81A85492283263B5003F695B /* CustomerServiceViewController+UI.swift in Sources */,
 				81A854C1283268FF003F695B /* SettingsHelper+Enum.swift in Sources */,
+				81E4BF9128A55FEF009985D8 /* EditProfileView.swift in Sources */,
 				81A8547228325D30003F695B /* OrdersViewController.swift in Sources */,
 				81A8543528325909003F695B /* CustomerServiceUsable.swift in Sources */,
 				81A8543A28325966003F695B /* ICustomerServiceRepository.swift in Sources */,
 				81A854B02832670E003F695B /* ConfigurationsViewController+TableView.swift in Sources */,
 				81A8548A28326235003F695B /* MostSearchedCell.swift in Sources */,
 				81A8549C283264D2003F695B /* AppIDConfigView.swift in Sources */,
+				81E4BF9928A560D3009985D8 /* SettingsViewController+TextField.swift in Sources */,
 				81A8541F28325101003F695B /* CustomNavigationController.swift in Sources */,
 				81A854BC283268B9003F695B /* SettingsItemCell.swift in Sources */,
 				81A85428283251D6003F695B /* ApplicationCoordinator.swift in Sources */,

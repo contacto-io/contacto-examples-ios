@@ -1,3 +1,5 @@
+import Foundation
+
 class SettingsViewModel: SettingsVMPresentable {
     var datasources: [SettingsItems]?
     
@@ -23,5 +25,9 @@ class SettingsViewModel: SettingsVMPresentable {
     
     func moveToConfiguration() {
         routeToConfiguration?()
+    }
+
+    func updateUserInfo(userInfo: UserInfo) {
+        UserDefaults.standard.userInfo = userInfo
     }
 }

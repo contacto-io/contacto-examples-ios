@@ -1,31 +1,41 @@
 import Foundation
 
 extension UserDefaults {
-    
-    var contactoInitInfo: ChatInfo {
+
+    var userInfo: UserInfo {
         get {
-            getInfo(with: "Contact.Info")
+            getInfo(with: "Contact.UserInfo") ?? UserInfo(name: "Ketan Somvanshi", email: "ketan.somvanshi@plivo.com", phoneNumber: "919986486551")
         }
         
         set {
-            store(with: newValue)
+            store(with: newValue, key: "Contact.UserInfo")
+        }
+    }
+    
+    var contactoInitInfo: ChatInfo {
+        get {
+            getInfo(with: "Contact.Info") ?? .init(appId: "", appKey: "")
+        }
+        
+        set {
+            store(with: newValue, key: "Contact.Info")
         }
         
     }
     
-    private func getInfo(with key: String) -> ChatInfo {
+    private func getInfo<T: Codable>(with key: String) -> T?{
         do {
             guard let data = UserDefaults.standard.data(forKey: key) else {
-                return .init(appId: "", appKey: "", mobileNumber: "", email: "")
+                return nil
             }
-            return try JSONDecoder().decode(ChatInfo.self, from: data)
+            return try JSONDecoder().decode(T.self, from: data)
         } catch {
-            return .init(appId: "", appKey: "", mobileNumber: "", email: "")
+            return nil
         }
     }
     
-    private func store(with info: ChatInfo) {
+    private func store<T: Codable>(with info: T, key: String) {
         let data = try? JSONEncoder().encode(info)
-        UserDefaults.standard.set(data, forKey: "Contact.Info")
+        UserDefaults.standard.set(data, forKey: key)
     }
 }

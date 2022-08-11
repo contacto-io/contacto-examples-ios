@@ -4,4 +4,5 @@ protocol SettingsVMPresentable {
     func viewDidLoad()
     func moveToCustomerService()
     func moveToConfiguration()
+    func updateUserInfo(userInfo: UserInfo)
 }
