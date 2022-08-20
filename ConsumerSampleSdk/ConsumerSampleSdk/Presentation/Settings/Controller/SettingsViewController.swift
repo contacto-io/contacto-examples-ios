@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController {
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
@@ -27,15 +28,17 @@ class SettingsViewController: UIViewController {
         label.textColor = .lightGray
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
     lazy var numberLabel: UILabel = {
         let label = UILabel()
-        label.text = "919986486551"
+        label.text = "9986486551"
         label.textColor = .lightGray
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
@@ -112,9 +115,11 @@ class SettingsViewController: UIViewController {
 
     @objc func handleDone() {
         guard let name = editProfileBottomView.nameTextField.text,
-              !name.isEmpty,
+              !name.trimmingCharacters(in: .whitespaces).isEmpty,
               let email = editProfileBottomView.emailTextField.text,
               !email.isEmpty,
+              !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              email.isValidEmail(),
               let phoneNumber = editProfileBottomView.phoneTextField.text,
               !phoneNumber.isEmpty else {
             updateErrorVisibility(error: "Please check your input", visiility: .show)

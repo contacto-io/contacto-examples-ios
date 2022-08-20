@@ -4,7 +4,7 @@ extension UserDefaults {
 
     var userInfo: UserInfo {
         get {
-            getInfo(with: "Contact.UserInfo") ?? UserInfo(name: "Ketan Somvanshi", email: "ketan.somvanshi@plivo.com", phoneNumber: "919986486551")
+            getInfo(with: "Contact.UserInfo") ?? UserInfo(name: "Ketan Somvanshi", email: "ketan.somvanshi@plivo.com", phoneNumber: "9986486551")
         }
         
         set {

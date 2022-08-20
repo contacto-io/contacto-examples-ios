@@ -42,6 +42,7 @@ class EditProfileView: UIView {
         textField.textColor = .black
         textField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         textField.returnKeyType = .done
+        textField.autocorrectionType = .no
         return textField
     }()
     
@@ -108,4 +109,3 @@ class EditProfileView: UIView {
         fatalError()
     }
 }
-

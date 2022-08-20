@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810F35BD28B0FBDA00953C5E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F35BC28B0FBDA00953C5E /* String+Extensions.swift */; };
 		81A853E728324AD4003F695B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853E628324AD4003F695B /* AppDelegate.swift */; };
 		81A853F028324AD5003F695B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A853EF28324AD5003F695B /* Assets.xcassets */; };
 		81A853FE28324AD5003F695B /* ConsumerSampleSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A853FD28324AD5003F695B /* ConsumerSampleSdkTests.swift */; };
@@ -102,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		5279E32288425D97585686B6 /* Pods-ConsumerSampleSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerSampleSdk.debug.xcconfig"; path = "Target Support Files/Pods-ConsumerSampleSdk/Pods-ConsumerSampleSdk.debug.xcconfig"; sourceTree = "<group>"; };
+		810F35BC28B0FBDA00953C5E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		81A853E328324AD4003F695B /* ConsumerSampleSdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsumerSampleSdk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A853E628324AD4003F695B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81A853EF28324AD5003F695B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				81A8542128325146003F695B /* UIView+Extensions.swift */,
 				81A854232832514F003F695B /* UIColor+Extensions.swift */,
 				81A854252832515E003F695B /* UserDefaults+Extensions.swift */,
+				810F35BC28B0FBDA00953C5E /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1032,6 +1035,7 @@
 				81A8542F283258B1003F695B /* CustomerServiceRepository.swift in Sources */,
 				81A854CB28326953003F695B /* SettingsViewController+TableView.swift in Sources */,
 				81A854A62832655E003F695B /* ConfigurationHelper+Protocols.swift in Sources */,
+				810F35BD28B0FBDA00953C5E /* String+Extensions.swift in Sources */,
 				81A854A128326528003F695B /* ConfigurationCell.swift in Sources */,
 				81A85492283263B5003F695B /* CustomerServiceViewController+UI.swift in Sources */,
 				81A854C1283268FF003F695B /* SettingsHelper+Enum.swift in Sources */,
@@ -1212,7 +1216,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7;
+				CURRENT_PROJECT_VERSION = 1.8;
 				DEVELOPMENT_TEAM = SLC276D6RF;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1248,7 +1252,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7;
+				CURRENT_PROJECT_VERSION = 1.8;
 				DEVELOPMENT_TEAM = SLC276D6RF;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
