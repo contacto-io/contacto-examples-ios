@@ -1,2 +1,2 @@
 // Chat URL
-CHAT_WIDGET_URL = https:/$()/chat-widget.contacto.com
+CHAT_WIDGET_URL = https:/$()/dev-chat-widget.contactodev.com

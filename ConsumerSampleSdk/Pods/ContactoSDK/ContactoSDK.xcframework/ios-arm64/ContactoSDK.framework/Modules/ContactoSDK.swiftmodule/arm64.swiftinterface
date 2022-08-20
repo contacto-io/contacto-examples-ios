@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ContactoSDK
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ContactoSDK
 import AVFoundation
 @_exported import ContactoSDK
 import Foundation
@@ -50,10 +50,14 @@ public struct ContactoSessionInfo : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct ContactoUserInfo : Swift.Codable {
-  public init(mobileNumber: Swift.String? = nil, email: Swift.String? = nil)
+  public init(mobileNumber: Swift.String? = nil, email: Swift.String? = nil, firstName: Swift.String?, lastName: Swift.String?)
   public let mobileNumber: Swift.String?
   public let email: Swift.String?
+  public let firstName: Swift.String?
+  public let lastName: Swift.String?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case firstName
+    case lastName
     case email
     case mobileNumber
     public init?(rawValue: Swift.String)
@@ -112,11 +116,3 @@ public enum Position {
     get
   }
 }
-extension ContactoSDK.ContactoSessionInfo.CodingKeys : Swift.Equatable {}
-extension ContactoSDK.ContactoSessionInfo.CodingKeys : Swift.Hashable {}
-extension ContactoSDK.ContactoSessionInfo.CodingKeys : Swift.RawRepresentable {}
-extension ContactoSDK.ContactoUserInfo.CodingKeys : Swift.Equatable {}
-extension ContactoSDK.ContactoUserInfo.CodingKeys : Swift.Hashable {}
-extension ContactoSDK.ContactoUserInfo.CodingKeys : Swift.RawRepresentable {}
-extension ContactoSDK.Position : Swift.Equatable {}
-extension ContactoSDK.Position : Swift.Hashable {}

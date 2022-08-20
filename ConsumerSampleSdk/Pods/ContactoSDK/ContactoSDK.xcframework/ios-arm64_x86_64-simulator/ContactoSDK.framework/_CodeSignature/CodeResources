@@ -10,7 +10,7 @@
 		</data>
 		<key>ContactoSDK+Prod.xcconfig</key>
 		<data>
-		KZxUStdtYyoA1O69IojFuyRa4IE=
+		W8ilbsvOMopRyZmuPkQaBnUOJc8=
 		</data>
 		<key>Headers/ContactoSDK-Swift.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tX0DjS4zOqDwTt+nUafkjmiZCoQ=
+		K1NV1QY3k+EC8/FbU9l9c1Ba4cs=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		V2S3VRq2iaoYfp7PiHmCWILxdHc=
+		Vkgd9IPFuXZsJCRasxm5zrJd5ic=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9SKFFWwfrfczf00nBXXxPk5V/6o=
+		HirmUqIpYeALDczJuFgYPXYaS0k=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		V2S3VRq2iaoYfp7PiHmCWILxdHc=
+		Vkgd9IPFuXZsJCRasxm5zrJd5ic=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9SKFFWwfrfczf00nBXXxPk5V/6o=
+		HirmUqIpYeALDczJuFgYPXYaS0k=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8nKVT3nTiAUbWhcmQADx61KpiJ0=
+		h8Yk7iWqybhbRWrAXn6imxrxoBs=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3UmX96olQRk6Fpf8GAR6j/YAWmc=
+		9b0WuFbnZ2k0pjaN9bvOIP6IQlc=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		8nKVT3nTiAUbWhcmQADx61KpiJ0=
+		h8Yk7iWqybhbRWrAXn6imxrxoBs=
 		</data>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		3UmX96olQRk6Fpf8GAR6j/YAWmc=
+		9b0WuFbnZ2k0pjaN9bvOIP6IQlc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vfr3PSvDxAkOXmI71qm3imIQEzWEfpJEu1evydUmHG4=
+			pghmN9dB80rbCY5Msr4pnc9erkPlpdeAf/2VxiCJxd4=
 			</data>
 		</dict>
 		<key>Headers/ContactoSDK-Swift.h</key>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rPDR6fAdR0Du3VA4wEC6/72y514ofqetyVOe9C1p5PM=
+			gFNzgm5YlXhmKv7JF2zhTbl3Jb2Piteyoamg8WnQWMA=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6Lew3jJYejcyAbQCzG8mWdIJ2OMGcl970oRdJ8U8Ig=
+			79IfIiF0nbw2W7IfWb3LMjlPEkSPndh41+OB7QNvRVw=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -139,14 +139,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rPDR6fAdR0Du3VA4wEC6/72y514ofqetyVOe9C1p5PM=
+			gFNzgm5YlXhmKv7JF2zhTbl3Jb2Piteyoamg8WnQWMA=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6Lew3jJYejcyAbQCzG8mWdIJ2OMGcl970oRdJ8U8Ig=
+			79IfIiF0nbw2W7IfWb3LMjlPEkSPndh41+OB7QNvRVw=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -160,14 +160,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ho19P3yg1K8C7cs2Scf+hJc8lz8ORsRTna9XqVnUrFw=
+			QEJQ3bvqx3KSwvshMLmETkR1Fd+EbmCzRRL7ev0mkcs=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			my56s40Y2llmdYWaupanO/fQeNFJJZr0/ceT3ZGBWJY=
+			OlgT/9IDeKRpan4zxDVqCHPz6pQ/Pgq0umwZw9M2TEM=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -181,14 +181,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ho19P3yg1K8C7cs2Scf+hJc8lz8ORsRTna9XqVnUrFw=
+			QEJQ3bvqx3KSwvshMLmETkR1Fd+EbmCzRRL7ev0mkcs=
 			</data>
 		</dict>
 		<key>Modules/ContactoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			my56s40Y2llmdYWaupanO/fQeNFJJZr0/ceT3ZGBWJY=
+			OlgT/9IDeKRpan4zxDVqCHPz6pQ/Pgq0umwZw9M2TEM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
