@@ -34,7 +34,7 @@ class SettingsViewController: UIViewController {
 
     lazy var numberLabel: UILabel = {
         let label = UILabel()
-        label.text = "9986486551"
+        label.text = "919986486551"
         label.textColor = .lightGray
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.textAlignment = .center
