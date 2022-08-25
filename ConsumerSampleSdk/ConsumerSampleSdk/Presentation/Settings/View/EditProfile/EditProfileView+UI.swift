@@ -8,8 +8,10 @@ extension EditProfileView {
         addSubview(titleLabel)
         addSubview(cancelButton)
         addSubview(doneButton)
-        addSubview(nameLabel)
-        addSubview(nameTextField)
+        addSubview(firstNameLabel)
+        addSubview(firstNameTextField)
+        addSubview(lastNameLabel)
+        addSubview(lastNameTextField)
         addSubview(emailLabel)
         addSubview(emailTextField)
         addSubview(phoneNumberLabel)
@@ -33,16 +35,25 @@ extension EditProfileView {
                              widthConstants: 60,
                              centerY: titleLabel.centerYAnchor)
         
-        nameLabel.anchors(top: titleLabel.bottomAnchor,
+        firstNameLabel.anchors(top: titleLabel.bottomAnchor,
                           topConstants: 30,
                           leading: cancelButton.leadingAnchor,
                           trailing: doneButton.trailingAnchor,
                           heightConstants: 40)
-        nameTextField.anchors(top: nameLabel.bottomAnchor,
+        firstNameTextField.anchors(top: firstNameLabel.bottomAnchor,
                              topConstants: 10,
-                             leading: nameLabel.leadingAnchor,
-                             trailing: nameLabel.trailingAnchor)
-        emailLabel.anchors(top: nameTextField.bottomAnchor,
+                             leading: firstNameLabel.leadingAnchor,
+                             trailing: firstNameLabel.trailingAnchor)
+        lastNameLabel.anchors(top: firstNameTextField.bottomAnchor,
+                                topConstants: 20,
+                                leading: cancelButton.leadingAnchor,
+                                trailing: doneButton.trailingAnchor,
+                                heightConstants: 40)
+        lastNameTextField.anchors(top: lastNameLabel.bottomAnchor,
+                             topConstants: 10,
+                             leading: emailLabel.leadingAnchor,
+                             trailing: emailLabel.trailingAnchor)
+        emailLabel.anchors(top: lastNameTextField.bottomAnchor,
                                 topConstants: 20,
                                 leading: cancelButton.leadingAnchor,
                                 trailing: doneButton.trailingAnchor,

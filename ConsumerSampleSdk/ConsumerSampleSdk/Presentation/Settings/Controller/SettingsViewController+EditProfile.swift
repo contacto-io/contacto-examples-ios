@@ -14,11 +14,12 @@ extension SettingsViewController {
     
     func upateProfileSection() {
         let userInfo = UserDefaults.standard.userInfo
-        nameLabel.text = userInfo.name
+        nameLabel.text = userInfo.firstName + " " + userInfo.lastName
         emailLabel.text = userInfo.email
         numberLabel.text = userInfo.phoneNumber
         editProfileBottomView.emailTextField.text = userInfo.email
-        editProfileBottomView.nameTextField.text = userInfo.name
+        editProfileBottomView.firstNameTextField.text = userInfo.firstName
+        editProfileBottomView.lastNameTextField.text = userInfo.lastName
         editProfileBottomView.phoneTextField.text = userInfo.phoneNumber
     }
     

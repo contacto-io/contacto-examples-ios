@@ -24,21 +24,43 @@ class EditProfileView: UIView {
         return button
     }()
     
-    lazy var nameLabel: UILabel = {
+    lazy var firstNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Name"
+        label.text = "First name"
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
     }()
-    
-    lazy var nameTextField: UITextField = {
+
+    lazy var firstNameTextField: UITextField = {
         let textField = UITextField()
         textField.layer.cornerRadius = 10
         textField.backgroundColor = .white
-        textField.placeholder = "Enter your name"
+        textField.placeholder = "Enter your first name"
+        textField.textColor = .black
+        textField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
+        textField.returnKeyType = .done
+        textField.autocorrectionType = .no
+        return textField
+    }()
+
+    lazy var lastNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Last name"
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.textAlignment = .left
+        label.numberOfLines = 0
+        return label
+    }()
+
+    lazy var lastNameTextField: UITextField = {
+        let textField = UITextField()
+        textField.layer.cornerRadius = 10
+        textField.backgroundColor = .white
+        textField.placeholder = "Enter your last name"
         textField.textColor = .black
         textField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         textField.returnKeyType = .done

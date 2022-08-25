@@ -65,7 +65,11 @@ class SettingsViewController: UIViewController {
         view.doneButton.addTarget(self, action: #selector(handleDone), for: .touchUpInside)
         view.phoneTextField.delegate = self
         view.emailTextField.delegate = self
-        view.nameTextField.delegate = self
+        view.firstNameTextField.delegate = self
+        view.phoneTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        view.emailTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        view.firstNameTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        view.lastNameTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         return view
     }()
 
@@ -77,7 +81,7 @@ class SettingsViewController: UIViewController {
         return view
     }()
 
-    let editProfileViewHeight: CGFloat = 420
+    let editProfileViewHeight: CGFloat = 500
     var editProfileViewBottomConstants: CGFloat {
         return view.safeAreaInsets.bottom + editProfileViewHeight
     }
@@ -96,6 +100,12 @@ class SettingsViewController: UIViewController {
         editProfileBottomView.roundCorners(corners: [.topLeft, .topRight], radius: 20)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        updateConfigVisibility(visibility: .hide)
+        updateErrorVisibility(visiility: .hide)
+    }
+
     private func binder() {
         guard var viewModel = viewModel else { return }
         viewModel.reloadTableView = { [weak self] in
@@ -105,6 +115,7 @@ class SettingsViewController: UIViewController {
     }
 
     @objc func handleEditProfile() {
+        upateProfileSection()
         updateConfigVisibility(visibility: .show)
     }
 
@@ -114,21 +125,45 @@ class SettingsViewController: UIViewController {
     }
 
     @objc func handleDone() {
-        guard let name = editProfileBottomView.nameTextField.text,
-              !name.trimmingCharacters(in: .whitespaces).isEmpty,
+        guard let firstName = editProfileBottomView.firstNameTextField.text,
+              !firstName.trimmingCharacters(in: .whitespaces).isEmpty,
               let email = editProfileBottomView.emailTextField.text,
               !email.isEmpty,
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
               email.isValidEmail(),
               let phoneNumber = editProfileBottomView.phoneTextField.text,
-              !phoneNumber.isEmpty else {
+              !phoneNumber.isEmpty,
+              let lastName = editProfileBottomView.lastNameTextField.text,
+              !lastName.trimmingCharacters(in: .whitespaces).isEmpty
+        else {
             updateErrorVisibility(error: "Please check your input", visiility: .show)
             return
         }
         view.endEditing(true)
         updateErrorVisibility(visiility: .hide)
-        viewModel?.updateUserInfo(userInfo: UserInfo(name: name, email: email, phoneNumber: phoneNumber))
+        viewModel?.updateUserInfo(userInfo: UserInfo(firstName: firstName,
+                                                     lastName: lastName,
+                                                     email: email,
+                                                     phoneNumber: phoneNumber))
         upateProfileSection()
         updateConfigVisibility(visibility: .hide)
+    }
+
+    @objc private func textFieldDidChange(_ textField: UITextField) {
+        guard let firstName =  editProfileBottomView.firstNameTextField.text,
+              !firstName.trimmingCharacters(in: .whitespaces).isEmpty,
+              let email = editProfileBottomView.emailTextField.text,
+              let phone = editProfileBottomView.phoneTextField.text,
+              let lastName = editProfileBottomView.lastNameTextField.text,
+              !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              !lastName.trimmingCharacters(in: .whitespaces).isEmpty,
+              !lastName.isEmpty,
+              !firstName.isEmpty,
+              !email.isEmpty,
+              !phone.isEmpty else {
+            editProfileBottomView.updateDoneButtonEnable(isEnabled: false)
+            return
+        }
+        editProfileBottomView.updateDoneButtonEnable(isEnabled: true)
     }
 }

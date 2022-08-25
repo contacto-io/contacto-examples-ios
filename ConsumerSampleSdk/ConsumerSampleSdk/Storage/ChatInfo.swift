@@ -4,7 +4,8 @@ public struct ChatInfo: Codable {
 }
 
 struct UserInfo: Codable {
-    let name: String
+    let firstName: String
+    let lastName: String
     let email: String
     let phoneNumber: String
 }

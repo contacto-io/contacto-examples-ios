@@ -23,26 +23,15 @@ class ConfigurationViewModel: ConfigurationVMPresentable {
     
     func updateChatConfiguration(with appId: String, and appKey: String) {
         let userInfo = UserDefaults.standard.userInfo
-        let name = getFirstAndLastName(name: userInfo.name)
         contacto.initConatactSDK(with: ContactoInitInfo(appInfo: .init(appId: appId,
                                                                        appKey: appKey),
                                                         userInfo: .init(mobileNumber: userInfo.phoneNumber,
                                                                         email: userInfo.email,
-                                                                        firstName: name.0,
-                                                                        lastName: name.1)))
+                                                                        firstName: userInfo.firstName,
+                                                                        lastName: userInfo.lastName)))
         
         UserDefaults.standard.contactoInitInfo = .init(appId: appId,
-                                                       appKey: appKey)
-    }
-    
-    private func getFirstAndLastName(name: String) -> (String, String) {
-        var components = name.components(separatedBy: " ")
-        if !components.isEmpty {
-            let firstName = components.removeFirst()
-            let lastName = components.joined(separator: " ")
-            return (firstName, lastName)
-        }
-        return ("", "")
+                                               appKey: appKey)
     }
     
     func handleBack() {
